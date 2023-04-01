@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bordas</title>
+  <link rel="stylesheet" href="src/css/build.css">
+</head>
+<body>
+
+  <!-- Raios -->
+  <div>
+    <button class="m-4 p-4 bg-red-400 rounded-sm">Raio Menor</button>
+    <button class="m-4 p-4 bg-red-400 rounded">Raio Normal</button>
+    <button class="m-4 p-4 bg-red-400 rounded-full">Raio Maior</button>
+  </div>
+
+  <!-- Circular e Pilula -->
+  <div class="m-4 flex gap-6 flex-col">
+    <span class="bg-green-400 w-20 h-20 block rounded-full">Circular</span>
+    <span class="bg-green-400 w-40 h-20 block rounded-full">Pilula</span>
+  </div>
+
+  <!-- Largura e Cor de Borda -->
+  <div class="m-4 flex gap-6 flex-col">
+    <span class="bg-blue-400 w-20 h-10 text-center text-m grid place-content-center text-white border-4 border-blue-600">Button</span>
+    <span class="bg-blue-400 w-20 h-10 text-center text-m grid place-content-center text-white border-4 border-blue-600 rounded-lg">Button</span>
+  </div>
+
+  <!-- Estilo e Opacidade das Bordas -->
+  <div class="m-4 flex gap-6">
+    <span class="bg-purple-600 w-40 h-10 text-center text-m grid place-content-center text-white border-4 border-red-800 border-opacity-40">Border opacity 40</span>
+    <span class="bg-purple-600 w-40 h-10 text-center text-m grid place-content-center text-white border-4 border-red-800 border-opacity-70">Border opacity 70</span>
+    <span class="bg-purple-600 w-40 h-10 text-center text-m grid place-content-center text-white border-4 border-red-800 border-opacity-100">Border opacity 100</span>
+  </div>
+  <div class="m-4 flex gap-6">
+    <span class="bg-purple-600 w-40 h-10 text-center text-m grid place-content-center text-white border-8 border-red-800 border-double">Border Double</span>
+    <span class="bg-purple-600 w-40 h-10 text-center text-m grid place-content-center text-white border-4 border-red-800 border-dashed">Border Dashed</span>
+    <span class="bg-purple-600 w-40 h-10 text-center text-m grid place-content-center text-white border-4 border-red-800 border-dotted">Border Doted</span>
+  </div>
+
+  <!-- Divide -->
+  <div class="m-4 grid grid-cols-4 divide-x-2 divide-blue-900">
+    <div class="text-center">1</div>
+    <div class="text-center">2</div>
+    <div class="text-center">3</div>
+    <div class="text-center">4</div>
+  </div>
+
+  <div class="m-4 grid grid-cols-4 divide-x-4 divide-blue-900">
+    <div class="text-center">1</div>
+    <div class="text-center">2</div>
+    <div class="text-center">3</div>
+    <div class="text-center">4</div>
+  </div>
+
+  <div class="m-4 grid grid-cols-4 divide-x-2 divide-blue-900 divide-dotted">
+    <div class="text-center">1</div>
+    <div class="text-center">2</div>
+    <div class="text-center">3</div>
+    <div class="text-center">4</div>
+  </div>
+
+  <div class="divide-y-2 divide-purple-400 divide-dashed">
+    <p>Testando Divide no eixo Y</p>
+    <p>Testando Divide no eixo Y</p>
+    <p>Testando Divide no eixo Y</p>
+    <p>Testando Divide no eixo Y</p>
+  </div>
+
+  <!-- Sombreamento -->
+  <div class="flex bg-gray-100 p-4">
+    <div class="m-4 w-30 h-20 shadow-sm grid place-content-center">Sombra SM</div>
+    <div class="m-4 w-30 h-20 shadow-md grid place-content-center">Sombra MD</div>
+    <div class="m-4 w-30 h-20 shadow-lg grid place-content-center">Sombra LG</div>
+    <div class="m-4 w-30 h-20 shadow-xl grid place-content-center">Sombra XL</div>
+    <div class="m-4 w-30 h-20 shadow-2xl grid place-content-center">Sombra 2XL</div>
+    <div class="m-4 w-30 h-20 shadow-inner grid place-content-center">Sombra INNER</div>
+  </div>
+</body>
+</html>
