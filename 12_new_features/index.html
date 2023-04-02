@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Features</title>
+  <link rel="stylesheet" href="src/css/build.css">
+  <!-- script para criar o toggle manual para dark mode -->
+  <script defer src="src/js/scripts.js"></script>
+</head>
+<body>
+
+  <!-- dark mode manual -->
+  <div class="m-4">
+    <button id="dark-mode" class="btn">Ativar/Desativar Dark Mode</button>
+  </div>
+
+  <!-- Adicionando novas cores do Tailwind. Apesar de já fazerem parte do Tailwind é preciso instalar elas -->
+  <div class="bg-amber-500 dark:bg-amber-900 text-white font-bold text-center p-10 m-4 md:dark:bg-blue-600 sm:dark:bg-blue-300">
+    <p class="">Esta é uma nova cor</p>
+  </div>
+  <div class="bg-rose-500 dark:bg-rose-900 text-white font-bold text-center p-10 m-4">
+    <p class="">Esta é uma nova cor</p>
+  </div>
+
+  <!-- Dark Mode -->
+  <div class="bg-blue-50 text-white font-bold text-center p-10 m-4 dark:bg-blue-800 dark:text-white">
+    <p class="">Dark Mode</p>
+  </div>
+
+  <!-- Ring Utilities -->
+  <div class="m-6 flex gap-6">
+    <button class="py-2 px-4 bg-amber-400 text-white ring-4 ring-amber-600 hover:bg-amber-600 rounded">Ring Externo</button>
+    <button class="py-2 px-4 bg-rose-400 rounded text-white ring-4 ring-rose-700 hover:bg-rose-700 ring-inset">Ring Interno</button>
+    <button class="py-2 px-4 bg-blue-400 rounded text-white ring-4 focus:ring-blue-700 focus:outline-none ring-inset">Ring Interno</button>
+  </div>
+
+  <!-- Tailwind CSS Forms -->
+  <div class="m-6">
+    <form action="">
+      <div class="flex flex-col items-center gap-6">
+        <input type="text" placeholder="Digite o seu nome" class="rounded">
+        <input type="text" placeholder="Digite o seu nome" class="border-0 border-b-2 border-gray-600">
+        <input type="text" placeholder="Digite o seu nome" class="border-transparent bg-gray-200 rounded">
+      </div>
+      <div class="m-4">
+        <select name="" id="" class="px-10 py-2 rounded ">
+          <option value="">Opção 1</option>
+          <option value="">Opção 2</option>
+        </select>
+      </div>
+      <div class="m4">
+        <input type="checkbox" name="" id="" class="border-gray-300 text-amber-400 mr-2 focus:ring-0">
+        <label for="">Checkbox</label>
+      </div>
+    </form>
+  </div>
+
+  <!-- Line height -->
+  <div class="m-6">
+    <h1 class="text-4xl">Line Height Padrão</h1>
+    <h1 class="text-4xl mb-4">Line Height Padrão</h1>
+    <h1 class="text-4xl leading-3">Line Height Modificado</h1>
+    <h1 class="text-4xl leading-3">Line Height Modificado</h1>
+  </div>
+
+  <!-- Text Overflow -->
+  <div class="m-4">
+    <p class="overflow-hidden overflow-ellipsis max-w-xs m-6 p-6 mx-auto bg-red-200 text-red-500 font-medium rounded-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elithjdiejilmlmkmfkrjnifjnrkjfjqirhfuihrfqfiqrifhqiurfhfhnjoqhrwfurhfuqhrfuqhrfuhqrufhqurfh. Vitae, tempore quasi! Numquam cumque maiores, repellendus labore adipisci officiis recusandae? Repellendus mollitia dolor debitis possimus! Eos provident accusantium consequuntur quos consequatur.</p>
+  </div>
+  <div class="m-4">
+    <p class="overflow-hidden max-w-xs m-6 p-6 mx-auto bg-purple-200 text-purple-500 font-medium rounded-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elithjdiejilmlmkmfkrjnifjnrkjfjqirhfuihrfqfiqrifhqiurfhfhnjoqhrwfurhfuqhrfuqhrfuhqrufhqurfh. Vitae, tempore quasi! Numquam cumque maiores, repellendus labore adipisci officiis recusandae? Repellendus mollitia dolor debitis possimus! Eos provident accusantium consequuntur quos consequatur.</p>
+  </div>
+</body>
+</html>
